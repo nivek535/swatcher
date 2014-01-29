@@ -13,46 +13,46 @@ public class Stock {
 
   @PrimaryKey
   @Persistent(valueStrategy = IdGeneratorStrategy.IDENTITY)
-  private Long id;
+  private Long id_test;
   @Persistent
-  private User user;
+  private User user_test;
   @Persistent
-  private String symbol;
+  private String symbol_test;
   @Persistent
-  private Date createDate;
+  private Date createDate_test;
 
   public Stock() {
-    this.createDate = new Date();
+    this.createDate_test = new Date();
 //test test yolo test
   }
 
   public Stock(User user, String symbol) {
     this();
-    this.user = user;
-    this.symbol = symbol;
+    this.user_test = user;
+    this.symbol_test = symbol;
   }
 
   public Long get_Id() {
-    return this.id;
+    return this.id_test;
   }
 
   public User get_User() {
-    return this.user;
+    return this.user_test;
   }
 
   public String get_Symbol() {
-    return this.symbol;
+    return this.symbol_test;
   }
 
   public Date get_CreateDate() {
-    return this.createDate;
+    return this.createDate_test;
   }
 
   public void set_User(User user) {
-	  this.user = user;
+	  this.user_test = user;
   }
 
   public void set_Symbol(String symbol) {
-    this.symbol = symbol;
+    this.symbol_test = symbol;
   }
 }
