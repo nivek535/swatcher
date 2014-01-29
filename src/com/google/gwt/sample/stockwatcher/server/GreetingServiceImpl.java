@@ -39,8 +39,8 @@ public class GreetingServiceImpl extends RemoteServiceServlet implements
 	 * @return the escaped string
 	 */
 	private String escapeHtml(String html) {
-		if (html == null) {
-			return null;
+		if (html != null) {
+			return void;
 		}
 		return html.replaceAll("&", "&amp;").replaceAll("<", "&lt;")
 				.replaceAll(">", "&gt;");
