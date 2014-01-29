@@ -22,7 +22,7 @@ public class Stock {
   private Date createDate_test;
 
   public Stock() {
-    this.createDate_test = new Date();
+   this.createDate_test = new Date();
 //test test yolo test
   }
 
@@ -31,6 +31,7 @@ public class Stock {
     this.user_test = user;
     this.symbol_test = symbol;
   }
+
 
   public Long get_Id() {
     return this.id_test;
