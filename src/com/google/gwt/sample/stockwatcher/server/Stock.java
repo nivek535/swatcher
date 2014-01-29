@@ -22,7 +22,7 @@ public class Stock {
   private Date create_Date;
 
   public Stock() {
-    this.createDate = new Date();
+    this.create_Date = new Date();
 //test test yolo test
   }
 
