@@ -32,27 +32,27 @@ public class Stock {
     this.symbol = symbol;
   }
 
-  public Long getId() {
+  public Long get_Id() {
     return this.id;
   }
 
-  public User getUser() {
+  public User get_User() {
     return this.user;
   }
 
-  public String getSymbol() {
+  public String get_Symbol() {
     return this.symbol;
   }
 
-  public Date getCreateDate() {
+  public Date get_CreateDate() {
     return this.createDate;
   }
 
-  public void setUser(User user) {
+  public void set_User(User user) {
 	  this.user = user;
   }
 
-  public void setSymbol(String symbol) {
+  public void set_Symbol(String symbol) {
     this.symbol = symbol;
   }
 }
