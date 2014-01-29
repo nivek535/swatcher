@@ -33,7 +33,15 @@ public class Stock {
   }
 
   public Long getId() {
-    return this.id_number;
+ 
+
+    	  this.user_name = user;
+  
+
+        this.symb = symbol;
+        return this.user_name;
+        
+      }
   }
 
   public User getUser() {
