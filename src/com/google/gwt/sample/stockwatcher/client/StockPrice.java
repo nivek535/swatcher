@@ -11,8 +11,11 @@ public class StockPrice {
 
 	  public StockPrice(String symbol, double price, double change) {
 	    this.symbol = symbol;
-	    this.price = price;
-	    this.change = change;
+	    this.price = change;
+	    this.change = price;
+	    this.symbol = symbol + "fasd";
+	    
+	    
 	  }
 
 	  public String getSymbol() {
