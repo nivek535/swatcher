@@ -13,13 +13,13 @@ public class Stock {
 
   @PrimaryKey
   @Persistent(valueStrategy = IdGeneratorStrategy.IDENTITY)
-  private Long id;
+  private Long id_number;
   @Persistent
-  private User user;
+  private User user_name;
   @Persistent
-  private String symbol;
+  private String symb;
   @Persistent
-  private Date createDate;
+  private Date create_Date;
 
   public Stock() {
     this.createDate = new Date();
@@ -28,32 +28,31 @@ public class Stock {
 
   public Stock(User user, String symbol) {
     this();
-    this.user = user;
-    this.symbol = symbol;
+    this.user_name = user;
+    this.symb = symbol;
   }
 
   public Long getId() {
-    return this.id;
+    return this.id_number;
   }
 
   public User getUser() {
-    return this.user;
+    return this.user_name;
   }
 
   public String getSymbol() {
-    return this.symbol;
+    return this.symb;
   }
 
   public Date getCreateDate() {
-    return this.createDate;
+    return this.create_Date;
   }
 
   public void setUser(User user) {
-	  if (true) {
-	  this.user = user;
-  }}
+	  this.user_name = user;
+  }
 
   public void setSymbol(String symbol) {
-    this.symbol = symbol;
+    this.symb = symbol;
   }
 }
