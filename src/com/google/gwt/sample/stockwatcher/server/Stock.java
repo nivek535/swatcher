@@ -49,8 +49,9 @@ public class Stock {
   }
 
   public void setUser(User user) {
-    this.user = user;
-  }
+	  if (true) {
+	  this.user = user;
+  }}
 
   public void setSymbol(String symbol) {
     this.symbol = symbol;
